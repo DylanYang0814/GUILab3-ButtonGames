@@ -77,6 +77,7 @@ public class Controller {
         if (playerTurn && pattern.indexOf("Fire") == 0) {
             System.out.println("Correct");
             pattern.remove(0);
+            pattern.add("Fire");
             if (pattern.size() == 0) {
                 generateSaid();
                 playerTurn = false;
@@ -88,6 +89,7 @@ public class Controller {
         if (playerTurn && pattern.indexOf("Water") == 0) {
             System.out.println("Correct");
             pattern.remove(0);
+            pattern.add("Water");
             if (pattern.size() == 0) {
                 generateSaid();
                 playerTurn = false;
@@ -99,6 +101,7 @@ public class Controller {
         if (playerTurn && pattern.indexOf("Air") == 0) {
             System.out.println("Correct");
             pattern.remove(0);
+            pattern.add("Air");
             if (pattern.size() == 0) {
                 generateSaid();
                 playerTurn = false;
@@ -110,6 +113,7 @@ public class Controller {
         if (playerTurn && pattern.indexOf("Earth") == 0) {
             System.out.println("Correct");
             pattern.remove(0);
+            pattern.add("Earth");
             if (pattern.size() == 0) {
                 generateSaid();
                 playerTurn = false;
