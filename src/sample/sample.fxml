@@ -8,16 +8,13 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
-      prefWidth="600.0"
-      style="-fx-background-image: url('http://blog.world-mysteries.com/wp-content/uploads/2018/01/hieroglyphsEG.jpg');"
-      xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-image: url('http://blog.world-mysteries.com/wp-content/uploads/2018/01/hieroglyphsEG.jpg');" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
     <children>
-        <Button fx:id="fire_button" layoutX="100" layoutY="81.0" mnemonicParsing="false" onAction="#addFire">
+        <Button fx:id="fire_button" layoutX="100" layoutY="81.0" mnemonicParsing="false" onAction="#addFire" textAlignment="CENTER">
             <graphic>
                 <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="https://i.imgur.com/8MNBQzW.png"/>
+                        <Image fx:id="fire_img" url="https://i.imgur.com/8MNBQzW.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -26,7 +23,7 @@
             <graphic>
                 <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="https://i.imgur.com/YseVts7.png"/>
+                        <Image url="https://i.imgur.com/YseVts7.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -35,7 +32,7 @@
             <graphic>
                 <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="https://i.imgur.com/omjudaT.png"/>
+                        <Image url="https://i.imgur.com/omjudaT.png" />
                     </image>
                 </ImageView>
             </graphic>
@@ -44,18 +41,19 @@
             <graphic>
                 <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
                     <image>
-                        <Image url="https://i.imgur.com/LxQ184j.png"/>
+                        <Image url="https://i.imgur.com/LxQ184j.png" />
                     </image>
                 </ImageView>
             </graphic>
         </Button>
         <Label layoutX="193.0" layoutY="28.0" text="The Ancient Ones Said" textFill="#fcf9f9" textOverrun="CLIP">
             <font>
-                <Font name="Arial" size="31.0"/>
+                <Font name="Arial" size="31.0" />
             </font>
         </Label>
+      <Button fx:id="start_button" layoutX="37.0" layoutY="34.0" mnemonicParsing="false" onAction="#startGame" text="Start" />
     </children>
     <opaqueInsets>
-        <Insets/>
+        <Insets />
     </opaqueInsets>
 </Pane>

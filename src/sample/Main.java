@@ -18,10 +18,10 @@ public class Main extends Application {
         ImageView mv = new ImageView(image);
 
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
-        primaryStage.setTitle("Hello World");
+        primaryStage.setTitle("Extreme Project - Dylan Yang Period 2-3");
         primaryStage.setScene(new Scene(root, 700, 595));
         primaryStage.show();
-        
+        //Controller.generateSaid();
     }
 
 
